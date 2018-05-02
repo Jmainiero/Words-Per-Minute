@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>John Mainiero</title>
+	<script src="queries.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+</head>
+<body>
+
+	<header>
+		<nav>
+		</nav>
+
+
+		<div class="hero-text-box">
+				<h1>Hi, I'm John.<br>&emsp;I like to build stuff. </h1>
+                <!-- <a class="btn btn-full" href="#">Contact me</a> -->
+
+		</div>
+	</header>
+
+    <section class="bodywelcomeHome">
+        <h2 class="quoteBeg">You can only get a beginner's mind once</h2>
+        <h2 class="quoteAuth">-Ellen Ullen</h2>
+    </section>
+
+		<section class = "section-needs">
+			<h2> Why Choose Me? </h2>
+			<div class = "grid">
+				<div class ="grid-item">
+					<img src="resources/img/canvas-offer.png">
+					<p>Each of my designs begin with a blank workspace which allows your content to guide the layout</p>
+				</div>
+				<div class ="grid-item">
+					<img src="resources/img/mobile-offer.png">
+					<p>Responsive development will make your website easier to access across all platforms</p>
+				</div>
+				<div class ="grid-item">
+					<img src="resources/img/clock-offer.png">
+					<p>Having a passion for web development allows me to deliver the highest quality content I have to offer in a timely manner</p>
+				</div>
+		</section>
+
+		<section class = "recent recent-Projects">
+			<h2>Recent Projects</h2>
+			<div class ="tile">
+					<div class ="tile-item first">
+						<img src = "resources/img/testWPM.png">
+					</div>
+					<div class ="tile-item second">
+						<img src = "resources/img/croppedPQ.png">
+					</div>
+					<div class ="tile-item third">
+						<img src = "resources/img/croppedGenkitest.png">
+					</div>
+				</div> <!-- End Grid -->
+		</section>
+
+			<section class="section-contact-form">
+				<h2>Let's Get In Touch </h2>
+				<div class = "parent-form">
+						<form accept-charset="UTF-8" action="https://usebasin.com/f/37f86144e65d" method="POST">
+							<label for = "name">Name </label>
+									<input type="text" name="name" id="name" placeholder="Your Name * " required><br>
+							<label for= "email"> Email </label>
+							 		<input type="email" name="email" id="email" placeholder="Your Email *" required><br>
+							 <textarea name="message" placeholder="Tell me what you had in mind * " required></textarea> <br>
+
+							 <button type="submit">Submit</button>
+						</form>
+					</div>
+			</section>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+</body>
+</html>

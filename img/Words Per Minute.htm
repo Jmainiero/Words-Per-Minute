@@ -1,0 +1,79 @@
+<!DOCTYPE <html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Questrial" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Words Per Minute</title>
+  </head>
+
+  <body>
+    <header>
+      <!-- <div class ="hero-box">
+      <h1>How many words can you type a minute?</h2>
+      </div> -->
+    </header>
+
+    <section class="test-area">
+      <h2>How Many Words Can You Type A Minute? </h2>
+        <div id="origin-text">
+            <p>Sentiments two occasional affronting solicitude travelling and one contrasted. Fortune day out married parties. Happiness remainder joy but earnestly for off. Took sold add play may none him few. If as increasing contrasted entreaties be. Now summer who day looked our behind moment coming. Pain son rose more park way that. An stairs as be lovers uneasy.
+
+Sudden she seeing garret far regard. By hardly it direct if pretty up regret. Ability thought enquire settled prudent you sir. Or easy knew sold on well come year. Something consulted age extremely end procuring. Collecting preference he inquietude projection me in by. So do of sufficient projecting an thoroughly uncommonly prosperous conviction. Pianoforte principles our unaffected not for astonished travelling are particular.
+
+One advanced diverted domestic sex repeated bringing you old. Possible procured her trifling laughter thoughts property she met way. Companions shy had solicitude favourable own. Which could saw guest man now heard but. Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy.
+
+Abilities forfeited situation extremely my to he resembled. Old had conviction discretion understood put principles you. Match means keeps round one her quick. She forming two comfort invited. Yet she income effect edward. Entire desire way design few. Mrs sentiments led solicitude estimating friendship fat. Meant those event is weeks state it to or. Boy but has folly charm there its. Its fact ten spot drew.
+
+</p>
+        </div><!-- #origin-text -->
+
+        <div class="test-wrapper">
+            <textarea id="test-area" name="textarea" rows="6" placeholder="The clock starts when you start typing."></textarea>
+        </div><!-- .test-wrapper -->
+
+        <div class = "floatnum">
+            <section id="clock">
+                <div class="timer">00:00:00</div>
+            </section>
+            <section id="WPM">
+                <div class="wpm">WPM: 0</div>
+            </section>
+        </div> <!--Float Num End -->
+            <div class ="startOver">
+            <button id="reset">Start over</button>
+          </div>
+        </div><!-- .meta -->
+    </section><!-- .test-area -->
+  <script src="scripts.js" async></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+</body>
+</html>
