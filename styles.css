@@ -1,0 +1,103 @@
+
+
+Header {
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/hero-box-3.jpeg);
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+  height: 15vh;
+  padding-top: 5%;
+  background-position: left;
+}
+
+header h1 {
+  text-transform: uppercase;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Questrial', sans-serif;
+}
+.test-area {
+    margin-bottom: 4em;
+    padding: 0 2em;
+
+}
+
+.test-area h2 {
+  font-size: 180%;
+}
+
+.test-wrapper {
+    border: 10px solid #3DC7BE;
+    border-radius: 10px;
+}
+
+#origin-text {
+    margin: 1em 0;
+    padding: 1em 1em 0;
+    background-color: #78C2C3;
+}
+
+#origin-text p {
+    margin: 0;
+    padding-bottom: 1em;
+}
+
+
+.test-wrapper {
+    height: 250px;
+    display: flex;
+}
+
+.test-wrapper textarea {
+    flex: 1;
+}
+
+.meta {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.floatnum {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.timer {
+  text-align: left;
+}
+.WPM {
+  text-align: right;
+  margin-top: -6%;
+}
+.timer, .wpm {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 1%;
+}
+
+.startOver {
+    margin: 0;
+}
+#reset {
+    padding: .5em 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #3DC7BE;
+    background: white ;
+    border: 10px solid #3DC7BE;
+    border-radius: 60%;
+}
+
+#reset:hover {
+    color: white;
+    background-color: #3DC7BE;
+}
